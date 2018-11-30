@@ -1,0 +1,21 @@
+uuid: 88dd1811-75cc-434c-a770-3845e9acf69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.google_maps.field_google_maps_url
+    - paragraphs.paragraphs_type.google_maps
+id: paragraph.google_maps.default
+targetEntityType: paragraph
+bundle: google_maps
+mode: default
+content:
+  field_google_maps_url:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

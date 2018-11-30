@@ -1,0 +1,31 @@
+uuid: 69cf86a0-f832-42ae-ade5-cb9275a8dd2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.google_maps.field_google_maps_url
+    - paragraphs.paragraphs_type.google_maps
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.google_maps.default
+targetEntityType: paragraph
+bundle: google_maps
+mode: default
+content:
+  field_google_maps_url:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,16 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph--google-maps">
+    {% block content %}
+      <div class="embed-responsive embed-responsive-map"><iframe allowfullscreen="" frameborder="0" height="450" src="{{ content.field_google_maps_url.0 }}" style="border:0" width="100%"></iframe></div>
+    {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

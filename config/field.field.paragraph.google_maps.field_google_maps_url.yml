@@ -1,0 +1,19 @@
+uuid: c10469f0-dfe3-4205-9c3f-ff2064ecdae4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_google_maps_url
+    - paragraphs.paragraphs_type.google_maps
+id: paragraph.google_maps.field_google_maps_url
+field_name: field_google_maps_url
+entity_type: paragraph
+bundle: google_maps
+label: URL
+description: 'The URL for a google maps iframe embed.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

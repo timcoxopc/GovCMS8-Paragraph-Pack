@@ -1,0 +1,9 @@
+uuid: d3b4a355-f6df-4691-9370-fe781ae1ec31
+langcode: en
+status: true
+dependencies: {  }
+id: google_maps
+label: 'Google Maps'
+icon_uuid: null
+description: 'Use to embed google maps.'
+behavior_plugins: {  }
