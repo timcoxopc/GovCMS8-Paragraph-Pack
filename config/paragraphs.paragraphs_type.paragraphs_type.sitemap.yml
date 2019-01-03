@@ -1,0 +1,9 @@
+uuid: 13badad8-bd55-41f0-b0ff-33b633e70b5d
+langcode: en
+status: true
+dependencies: {  }
+id: sitemap
+label: Sitemap
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundleclean_class,
+    view_mode  'paragraph--view-mode--' ~ view_modeclean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph--sitemap">
+    {% block content %}
+      {% if sitemap %}
+        {{ sitemap }}
+      {% endif %}
+    {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}
